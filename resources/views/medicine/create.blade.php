@@ -15,6 +15,7 @@
             3. input attr name (isi disamakan dengan column di migration)
             4. button/input type submit
         --}}
+        @csrf
         @if($errors->any())
             <div class="alert alert-danger">
                 <ul>
@@ -53,6 +54,6 @@
                 <input type="number" class="form-control" id="stock" name="stock" value="{{ old('stock') }}">
             </div>
         </div>
-        <button type="button" class="btn btn-primary mt-3">Kirim</button>
+        <button type="submit" class="btn btn-primary mt-3">Kirim</button>
     </form>
 @endsection

@@ -13,6 +13,6 @@ class Controller extends BaseController
 
 
     public function landing() {
-        return view('pages.home');
+        return view('users.home');
     }
 }

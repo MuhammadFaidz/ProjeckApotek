@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
-{{-- action ke patch, mengirim {id} --}}
+    {{-- action ke patch, mengirim {id} --}}
     <form action="{{ route('medicines.update', $medicine['id']) }}" method="POST">
         @csrf
         @method('PATCH')

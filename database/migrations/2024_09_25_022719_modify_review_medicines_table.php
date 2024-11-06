@@ -20,11 +20,11 @@ return new class extends Migration
     /**
      * Reverse the migrations.
      */
-    public function down(): void
-    {
-        Schema::table('medicines', function (Blueprint $table) {
-            //
-            $table->string('review')->default('Bagus');
-        });
-    }
+    // public function down(): void
+    // {
+    //     Schema::table('medicines', function (Blueprint $table) {
+    //         //
+    //         $table->string('review')->default('Bagus');
+    //     });
+    // }
 };
